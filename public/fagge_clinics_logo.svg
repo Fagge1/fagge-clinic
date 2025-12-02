@@ -1,0 +1,45 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle with gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0ea5e9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="crossGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0f9ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main circle background -->
+  <circle cx="100" cy="100" r="90" fill="url(#bgGradient)"/>
+  
+  <!-- Medical cross with modern styling -->
+  <g transform="translate(100, 100)">
+    <!-- Vertical bar of cross -->
+    <rect x="-12" y="-45" width="24" height="90" rx="4" fill="url(#crossGradient)"/>
+    <!-- Horizontal bar of cross -->
+    <rect x="-45" y="-12" width="90" height="24" rx="4" fill="url(#crossGradient)"/>
+    
+    <!-- Center circle accent -->
+    <circle cx="0" cy="0" r="18" fill="#0ea5e9" opacity="0.3"/>
+    
+    <!-- Heartbeat line effect -->
+    <path d="M -25,-8 L -15,-8 L -10,8 L -5,-8 L 5,-8 L 10,8 L 15,-8 L 25,-8" 
+          stroke="#0284c7" 
+          stroke-width="2.5" 
+          fill="none" 
+          opacity="0.6"/>
+  </g>
+  
+  <!-- Outer ring decoration -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.3"/>
+  
+  <!-- Text -->
+  <text x="100" y="175" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#1e3a8a" text-anchor="middle">
+    FAGGE
+  </text>
+  <text x="100" y="192" font-family="Arial, sans-serif" font-size="12" fill="#64748b" text-anchor="middle">
+    CLINICS
+  </text>
+</svg>
